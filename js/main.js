@@ -61,6 +61,7 @@
   function initGate() {
     var gate     = document.getElementById('gate');
     var enterBtn = document.getElementById('gate-enter');
+    var audio    = document.getElementById('bg-music');
     if (!gate || !enterBtn) return;
 
     var opened = false;
@@ -68,6 +69,13 @@
     function openGate() {
       if (opened) return;
       opened = true;
+
+      // Start music when gate opens
+      if (audio) {
+        audio.play().catch(function(err) {
+          console.log('Audio play failed:', err);
+        });
+      }
 
       gate.classList.add('gate-closing');
       document.body.classList.remove('gate-active');
