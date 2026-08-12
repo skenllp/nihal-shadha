@@ -270,7 +270,7 @@ body.gate-active {
   opacity: 0;
   animation: fadeUp 1.1s ease 1.4s forwards;
   text-shadow: 0 4px 30px rgba(0, 0, 0, 0.4);
-  text-align: left;
+  text-align: center;
 }
 
 .gate-date {
