@@ -222,21 +222,16 @@
 
   /* Gate names - ensure center alignment on mobile */
   .gate-names {
-    left: 50%;
-    transform: translateX(-50%);
-    width: 85%;
-    text-align: center;
+    width: 90%;
   }
 
   .gate-label {
-    left: 50%;
-    transform: translateX(-50%);
-    text-align: center;
+    width: 85%;
+    max-width: 350px;
   }
 
   .gate-date {
-    left: 50%;
-    transform: translateX(-50%);
+    white-space: nowrap;
   }
 }
 
@@ -264,34 +259,5 @@
 @media (max-height: 700px) {
   .hero-scroll-hint {
     display: none;
-  }
-}
-
-/* ===== IPHONE AND MOBILE SPECIFIC: Force center alignment ===== */
-@media (max-width: 430px) {
-  .gate-names {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 90% !important;
-    text-align: center !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .gate-label {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    width: 90% !important;
-    text-align: center !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
-  }
-
-  .gate-date {
-    left: 50% !important;
-    transform: translateX(-50%) !important;
-    text-align: center !important;
-    margin-left: 0 !important;
-    margin-right: 0 !important;
   }
 }
