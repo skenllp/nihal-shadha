@@ -263,7 +263,7 @@ body.gate-active {
 
 .gate-names {
   position: absolute;
-  bottom: 340px;
+  bottom: 280px;
   left: 50%;
   transform: translateX(-50%);
   width: 90%;
